@@ -329,11 +329,11 @@ option:focus {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 60px;
-  padding-bottom: 80px; }
+  padding-bottom: 60px; }
   #mecanica .titulo-seccion {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
   #mecanica .row {
     width: 80%; }
     #mecanica .row div {
@@ -341,17 +341,76 @@ option:focus {
       justify-content: center;
       flex-wrap: wrap; }
       #mecanica .row div .img-static {
-        width: 150px;
-        height: 150px; }
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px; }
       #mecanica .row div p {
+        font-family: "Myriad-SemiBold";
         text-align: center;
-        font-size: 1vw;
+        font-size: 1.5vw;
+        line-height: 1.4;
         margin: 2% 0% 0% 0%;
         padding: 0% 15% 0% 15%; }
         #mecanica .row div p span {
           font-size: 18pt;
           font-family: "Myriad-SemiBold"; }
 
+.marco-texto {
+  background-color: #462F77;
+  color: white;
+  padding: 10px 50px 10px 50px;
+  margin-bottom: 10px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  border: 0px solid #000000; }
+
+.marco-texto:hover {
+  background-color: #C75B85;
+  color: white; }
+
+.cont-mecanica {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .cont-mecanica .caja-mecanica {
+    width: 300px;
+    height: 320px;
+    overflow: hidden;
+    margin: 0% 3% 0% 3%; }
+    .cont-mecanica .caja-mecanica .cont-caja {
+      text-align: center;
+      position: relative; }
+      .cont-mecanica .caja-mecanica .cont-caja .img-static {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px; }
+      .cont-mecanica .caja-mecanica .cont-caja .cont-linea {
+        margin-top: 25px; }
+        .cont-mecanica .caja-mecanica .cont-caja .cont-linea .linea {
+          border-bottom: 5px solid #707070; }
+      .cont-mecanica .caja-mecanica .cont-caja p {
+        font-family: "Myriad-SemiBold";
+        text-align: center;
+        font-size: 18pt;
+        line-height: 1.4;
+        margin: 2% 0% 0% 0%; }
+        .cont-mecanica .caja-mecanica .cont-caja p span {
+          font-size: 18pt;
+          font-family: "Myriad-SemiBold"; }
+      .cont-mecanica .caja-mecanica .cont-caja .texto-mecanica {
+        font-size: 16pt; }
+
+@keyframes AbajoMecanica {
+  0% {
+    top: 0px; }
+  100% {
+    top: -240px; } }
+@keyframes ArribaMecanica {
+  0% {
+    top: -240px; }
+  100% {
+    top: 0px; } }
 @media only screen and (max-width: 1200px) {
   #mecanica .row div p {
     text-align: center;
@@ -694,10 +753,10 @@ footer {
   footer .row {
     width: 50%; } }
 /*
-    *
-    *
-    *
-    */
+*
+*
+*
+*/
 .cont-box {
   width: 100%;
   display: flex;
@@ -775,7 +834,7 @@ footer {
 @media only screen and (max-width: 470px) {
   .cont-text-box .cont-form-box .form-box {
     width: 90% !important; } }
-/*
+    /*
 *
 *
 */
@@ -902,7 +961,7 @@ footer {
 .footer-registroTicket {
   margin-top: 50px; }
 
-/*
+    /*
 *
 *
 *
@@ -1055,7 +1114,7 @@ footer {
 .width-100 {
   width: 100% !important; }
 
-/*
+    /*
 *
 *
 *

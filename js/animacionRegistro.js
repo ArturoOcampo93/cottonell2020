@@ -59,3 +59,41 @@ function registrar() {
     z.style.animation = "fadeInLeft 1s 1";
     document.getElementById('flechaRegistro').src = "images/FlechaUp.gif";
 }
+
+function Abajo(y) {
+    var x;
+    switch (y) {
+        case 1:
+            x = document.getElementById("meca-1");
+            break;
+        case 2:
+            x = document.getElementById("meca-2");
+            break;
+        case 3:
+            x = document.getElementById("meca-3");
+            break;
+        default:
+            console.log("El Id no ha sido declarado");
+    }
+    x.style.animation = "AbajoMecanica 2s 1";
+    x.style.top = "-240px";
+}
+
+function Arriba(y) {
+    var x;
+    switch (y) {
+        case 1:
+            x = document.getElementById("meca-1");
+            break;
+        case 2:
+            x = document.getElementById("meca-2");
+            break;
+        case 3:
+            x = document.getElementById("meca-3");
+            break;
+        default:
+            console.log("El Id no ha sido declarado");
+    }
+    x.style.animation = "ArribaMecanica 2s 1";
+    x.style.top = "0px";
+}
