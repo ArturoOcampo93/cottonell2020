@@ -64,7 +64,8 @@
                 </div>
                 <div class="cont-text-box-cuenta">
                     <h1>Mi Cuenta</h1>
-                    <p>Tienes aún <span id="participaciones">2</span> participaciones </p>
+                    <!--Numero de participaciones-->
+                    <p>Tienes aún <span id="participaciones">2</span> oportunidades</p>
                     <div class="cont-linea">
                         <div class="linea"></div>
                     </div>
@@ -118,11 +119,11 @@
         </div>
         <div class="cont-footer">
             <ul>
-                <li><a href="">Términos y Condiciones</a></li>
-                <li><a href="">Aviso de privacidad</a></li>
-                <li><a href="">Bases de la promoción</a></li>
-                <li><a href="">Preguntas frecuentes</a></li>
-                <li><a href="">Contáctanos</a></li>
+                <li><a href="" data-toggle="modal" data-target="#TerminosCondiciones">Términos y Condiciones</a></li>
+                <li><a href="" data-toggle="modal" data-target="#privacidad">Aviso de privacidad</a></li>
+                <li><a href="" data-toggle="modal" data-target="#bases">Bases de la promoción</a></li>
+                <li><a href="" data-toggle="modal" data-target="#faqs">Preguntas frecuentes</a></li>
+                <li><a href="" data-toggle="modal" data-target="#contacto">Contáctanos</a></li>
 
             </ul>
         </div>
@@ -138,6 +139,87 @@
             </div>
         </div>
     </footer>
+    <!-- Modal | Términos y Condiciones Modal-->
+    <div class="modal fade" id="TerminosCondiciones" tabindex="-1" role="dialog" aria-labelledby="TerminosCondiciones" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="TerminosCondiciones">Términos y Condiciones</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Aviso de privacidad-->
+    <div class="modal fade" id="privacidad" tabindex="-1" role="dialog" aria-labelledby="privacidad" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="privacidad">Aviso de privacidad</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Bases -->
+    <div class="modal fade" id="bases" tabindex="-1" role="dialog" aria-labelledby="bases" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="bases">Bases de la promoción</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Preguntas Frecuentes -->
+    <div class="modal fade" id="faqs" tabindex="-1" role="dialog" aria-labelledby="faqs" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="faqs">Preguntas frecuentes</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Contacto -->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contacto" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="contacto">Contáctanos</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TERMINA FOOTER-->
 
 
 

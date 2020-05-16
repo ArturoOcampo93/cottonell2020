@@ -86,7 +86,7 @@
                     <div class="cont-linea">
                         <div class="linea"></div>
                     </div>
-                    <p class="texto-mecanica">Compra mínimo $99 MXN y entre más registres, más oportunidades tendrás de ganar increíbles premios semanales.</p>
+                    <p class="texto-mecanica"><span>Compra</span> mínimo <span>$99 MXN</span> y entre más registres, más oportunidades tendrás de ganar <span>increíbles premios semanales</span>.</p>
                 </div>
             </div>
             <div class="caja-mecanica">
@@ -96,7 +96,7 @@
                     <div class="cont-linea">
                         <div class="linea"></div>
                     </div>
-                    <p class="texto-mecanica">Regístrate en este sitio y envíanos una foto de tu ticket de compra.</p>
+                    <p class="texto-mecanica"><span>Regístrate</span> en este sitio y envíanos <span>una foto de tu ticket</span> de compra.</p>
                 </div>
             </div>
             <div class="caja-mecanica">
@@ -106,7 +106,7 @@
                     <div class="cont-linea">
                         <div class="linea"></div>
                     </div>
-                    <p class="texto-mecanica">Participa en nuestro juego y podrás ganar uno de los varios premios semanales que tenemos para ti.</p>
+                    <p class="texto-mecanica"><span>Participa</span> en nuestro <span>juego</span> y podrás ganar uno de los varios <span>premios semanales</span> que tenemos para ti.</p>
                 </div>
             </div>
         </div>
@@ -141,31 +141,49 @@
         <div class="titulo-seccion row">
             <div class="text-center">
                 <img class="img-titulos" src="images/Registro.png" alt="Registro">
-                <p>Usa la flecha para abrir el registro o para <span class="underline semiBold" onclick="login()">iniciar sesión</span></p>
+                <p>Usa la flecha para abrir el registro o clic en <span class="underline semiBold" onclick="login()">Ingresar</span></p>
                 <div onclick="DespliegueRegistro()">
                     <img src="images/FlechaDown.gif" alt="..." id="flechaRegistro">
                 </div>
             </div>
         </div>
-        <!--Formulario de Registro-->
+        <!--INICIA FORMULARIO-->
+        <!--Contenedor del formulario-->
         <div class="row justify-content-center animated" id="RegistroForm">
             <form action="">
                 <div class="text-center">
                     <p class="underline semiBold" onclick="login()">Ya tengo cuenta</p>
                 </div>
                 <div class="cont-form">
-                    <!--Barra de Alerta | Registro-->
-                    <div class="alertas" id="alerta-registro">
-                        <p>El campo <span id="camporegistro">"Nombre del campo"</span> es incorrecto</p>
+                    <div>
+
+
+                        <!-- "input-group" | Es el div que contiene al input | Dentro de este DIV aparecera tu validación de .NET -->
+                        <div class="input-group">
+                            <!--Input que sera sustituido por .NET-->
+                            <input type="text" placeholder="Nombre">
+                            <!--
+                                Según entendi, al texto de la validación puedes agregarle estilos,
+                                Hice una clase para tu texto de validación, espero te sirva, la dejo de ejemplo:
+                            -->
+                            <!--Clase "estilo-validador"-->
+                            <span class="estilo-validador">campo incorrecto</span>
+                        </div>
+                        <!--Termina el DIV contenedor del Input-->
+
+
+
+                        <div class="input-group">
+                            <input type="text" placeholder="Apellido">
+                        </div>
                     </div>
                     <div>
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
-                    </div>
-                    <div>
-                        <input type="tel" placeholder="Teléfono">
-                        <div class="select">
-                            <select class="custom-select width-select" name="" id="">
+                        <div class="input-group">
+                            <input type="tel" placeholder="Teléfono">
+                        </div>
+                        <div class="input-group">
+                            <div class="select">
+                                <select class="custom-select width-select" name="" id="">
                                 <option selected>Selecciona tu Estado</option>
                                 <option value="">Aguascalientes</option>
                                 <option value="">Baja California</option>
@@ -200,26 +218,43 @@
                                 <option value="">Yucatán</option>
                                 <option value="">Zacatecas</option>
                             </select>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <input type="email" placeholder="Email">
+                        <div class="input-group">
+                            <input type="email" placeholder="Email">
+                        </div>
                     </div>
                 </div>
                 <div class="checkbox">
-                    <input class="check" type="checkbox" name="" id="">
-                    <p>Certifico que soy mayor de 18 años</p>
+
+                    <!-- En el caso las casillas checkbox el DIV contenedor del input y tu validación es: "input-group-checkbox"-->
+                    <div class="input-group-checkbox">
+                        <input class="check" type="checkbox" name="" id="">
+                        <p>Certifico que soy mayor de 18 años</p>
+
+                        <!--Dejo este <span> de ejemplo de tu validación con la clase "estilo-validador"-->
+                        <span class="estilo-validador">campo incorrecto</span>
+
+
+                    </div>
                 </div>
                 <div class="checkbox">
-                    <input class="check" type="checkbox" name="" id="">
-                    <p>Acepto los <a href="" target="_blank">Términos y Condiciones</a></p>
+                    <div class="input-group-checkbox">
+                        <input class="check" type="checkbox" name="" id="">
+                        <p>Acepto los <a href="" target="_blank">Términos y Condiciones</a></p>
+                    </div>
                 </div>
                 <div class="cont-boton">
-                    <!--<input class="button" type="submit" value="Enviar Registro">-->
-                    <!-- BOTÓN DE EXIBICIÓN  --><button type="button" class="button SoloExibicion" data-toggle="modal" data-target="#staticBackdrop">Enviar Registro</button>
+                    <!--Botón de envio del formulario y redirecciona a la ThankYou Page-->
+                    <button type="button" class="button" onclick="location.href='gracias-registro.html'">Enviar Registro</button>
                 </div>
             </form>
         </div>
+        <!--TERMINA FORMULARIO DE REGISTRO-->
+
+
     </section>
 
 
@@ -228,33 +263,42 @@
         <div class="titulo-seccion row">
             <div class="text-center">
                 <img class="img-titulos" src="images/Ingresa.png" alt="Ingresa">
-                <p>Usa la flecha para abrir el <span class="underline semiBold" onclick="registrar()">registro</span> o para iniciar sesión</p>
+                <p>Haz clic en <span class="underline semiBold" onclick="registrar()">Registro</span> si aún no tienes una cuenta</p>
                 <div>
                     <img src="images/FlechaDown.gif" alt="..." onclick="DespliegueLogIn()" id="flechaLogin">
                 </div>
             </div>
         </div>
-        <!--Formulario de LogIn-->
+
+
+
+        <!--COMIENZA FORMULARIO DE LOGIN-->
         <div class="row justify-content-center" id="LogInForm">
             <form action="">
                 <div class="text-center">
                     <p class="underline semiBold" onclick="registrar()">No tengo cuenta</p>
                 </div>
                 <div class="cont-form">
-                    <!--Barra de Alerta | Registro-->
-                    <div class="alertas" id="alerta-login">
-                        <p>El campo <span id="campologin">"Nombre del campo"</span> es incorrecto</p>
-                    </div>
-                    <div>
+
+                    <!--DIV "input-Group" para mantener el texto de la validación-->
+                    <div class="input-group">
                         <input type="email" placeholder="Email">
+
+                        <!--Ejemplo de la clase para agregar a los estilos de la validación-->
+                        <span class="estilo-validador">campo incorrecto</span>
+
                     </div>
                 </div>
                 <div class="cont-boton">
-                    <!--<input class="button" type="submit" value="Ingresar">-->
-                    <!-- BOTÓN DE EXIBICIÓN  --><button type="button" class="button SoloExibicion" onclick="location.href='RegistroTicket.html'">Ingresar</button>
+                    <!--Boton de Ingresar - lleva a registrar el ticket-->
+                    <button type="button" class="button" onclick="location.href='RegistroTicket.html'">Ingresar</button>
                 </div>
             </form>
         </div>
+        <!--TERMINA FORMULARIO DE LOGIN-->
+
+
+
     </section>
 
     <!--PREMIOS-->
@@ -277,7 +321,7 @@
                         <div class="col-12 col-md-6 align-texto">
                             <div class="cont-tex">
                                 <h3>1º Lugar</h3>
-                                <p>Monedero electrónico <span class="semiBold">SODEXO</span> por la cantidad de <span class="semiBold">$10,000 MXN</span>.</p>
+                                <p><span class="semiBold">$10,000 MXN</span> en<br>monedero electrónico.</p>
                             </div>
                         </div>
                     </div>
@@ -290,7 +334,7 @@
                         <div class="col-12 col-md-6 align-texto">
                             <div class="cont-tex">
                                 <h3>2º Lugar</h3>
-                                <p><span class="semiBold">$1,500 MXN</span> en monedero electrónico, compra eso que siempre deseaste y recíbelo en<br>la puerta de tu casa.</p>
+                                <p><span class="semiBold">$1,500 MXN</span> en<br>monedero electrónico.</p>
                             </div>
                         </div>
                     </div>
@@ -303,7 +347,7 @@
                         <div class="col-12 col-md-6 align-texto">
                             <div class="cont-tex">
                                 <h3>3º Lugar</h3>
-                                <p><span class="semiBold">$800 MXN</span> en Crédito en <span class="semiBold">Uber Eats</span>, para no te quedes sin eso que te tanto te gusta. </p>
+                                <p><span class="semiBold">$800 MXN</span> en<br>monedero electrónico.</p>
                             </div>
                         </div>
                     </div>
@@ -345,19 +389,64 @@
                 <img class="img-titulos" src="images/Ganadores.png" alt="ganadores">
             </div>
             <div class="cont-tabla-ganadores">
-                <img src="images/copa.png" alt="Copa de Ganadores">
-                <table>
-                    <thead>
-                        <th colspan="2">Ganadores de esta semana</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Nombre del Ganador</td>
-                            <td>Tipo de premios</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <img src="images/copa.png" alt="Copa de Ganadores">
+                <div class="cont-img-ganador">
+                    <img src="images/copa.gif" alt="Copa de Ganadores">
+                </div>
+
+
+
+
+                <!--PROPUESTA DE ORGANIZACIÓN DE GANADORES EN TABLA-->
+                <div class="cont-int-tabla">
+                    <table>
+                        <thead>
+                            <th colspan="2">Ganadores de esta semana</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre del Ganador</td>
+                                <td class="texto-premios">Monedero electrónico con $ 10,000 MXN</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre del Ganador</td>
+                                <td class="texto-premios">Monedero electrónico con $ 1,500 MXN</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre del Ganador</td>
+                                <td class="texto-premios">Monedero electrónico con $ 800 MXN</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table>
+                        <thead>
+                            <th colspan="2">Ganadores de la semana pasada</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre del Ganador</td>
+                                <td class="texto-premios">Tipo de premios</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre del Ganador</td>
+                                <td class="texto-premios">Tipo de premios</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre del Ganador</td>
+                                <td class="texto-premios">Tipo de premios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                </div>
+
+
+
+
+
+                <div class="cont-img-ganador">
+                    <img src="images/copa.gif" alt="Copa de Ganadores">
+                </div>
             </div>
         </section>
         <picture>
@@ -477,25 +566,6 @@
         </div>
     </div>
     <!--TERMINA FOOTER-->
-
-
-
-    <!-- Modal | Gracias por registrarse -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="images/check.png" alt="check">
-                    <h2>¡Gracias por tu registro!</h2>
-                    <p>¿Estas listo para registrar tu ticket de compra y participar para uno de nuestros premios semanales?</p>
-                    <div class="middle">
-                        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-                        <button type="button" class="button width-100" onclick="location.href='RegistroTicket.html'">Registrar Ticket</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!--Scripts Bootstrap-->
