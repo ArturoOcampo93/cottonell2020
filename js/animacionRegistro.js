@@ -41,11 +41,11 @@ function login() {
     var y = document.getElementById('login');
     var z = document.getElementById('LogInForm');
 
+
     x.style.display = "none";
     y.style.display = "flex";
     z.style.display = "flex";
-    z.style.animation = "fadeInRight 1s 1";
-    document.getElementById('flechaLogin').src = "images/FlechaUp.gif";
+    z.style.animation = "fadeInLeft 1s 1";
 }
 
 function registrar() {
@@ -56,8 +56,7 @@ function registrar() {
     y.style.display = "none";
     x.style.display = "flex";
     z.style.display = "flex";
-    z.style.animation = "fadeInLeft 1s 1";
-    document.getElementById('flechaRegistro').src = "images/FlechaUp.gif";
+    z.style.animation = "fadeInRight 1s 1";
 }
 
 function Abajo(y) {

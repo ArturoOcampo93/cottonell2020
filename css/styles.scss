@@ -1,49 +1,62 @@
             // Variables
             //Colores base
-            $colorNaranja: #FDEBB5;
-            $colorVerde: #D3E2BA;
-            $colorMorado:#DDD4FC;
-            $colorAzul: #5CBEC9;
+            $colorAzul: #0f119f;
+            $colorAzul-2: #71bfeb;
+            $colorAzul-3:#46abe5;
+            $colorAzulClaro: #c2ddf3;
+            $colorRojo: #F04537;
+            $colorAmarillo: #FED324;
+            $colorCafe: #3F2B2F;
             $colorGris: #F8F8F8;
             $colorGrisFuerte: #F2F2F2;
             //Colores de texto
-            $colorNegro: #707070;
+            $colorNegro: #000;
             $textoAzul: #462F77;
             //Color iconos
             $flecha: #C75B85;
             $colorIcono: #855C34;
             //Color botones
-            $colorboton: #5CBEC9;
-            $colorBotonHover: #49A8B2;
+            $colorboton: #F04537;
+            $colorBotonHover: #FED324;
             //Fuentes
             @font-face {
-                font-family: "Futura-Bold";
-                src: url("fonts/Futura-Bold.otf");
+                font-family: "BebasNeue";
+                src: url("fonts/BebasNeue-Bold.otf");
             }
             
             @font-face {
-                font-family: "Futura-Medium";
-                src: url("fonts/FuturaBT-Medium.otf");
+                font-family: "Berthold-Bold";
+                src: url("fonts/Berthold-Bold.otf");
             }
             
             @font-face {
-                font-family: "Myriad-Regular";
-                src: url("fonts/MyriadProRegular.otf");
+                font-family: "Berthold-Regular";
+                src: url("fonts/Berthold-Regular.otf");
             }
             
             @font-face {
-                font-family: "Myriad-Bold";
-                src: url("fonts/MyriadPro-BoldCond.otf");
+                font-family: "MagnoliaScript";
+                src: url("fonts/MagnoliaScript.otf");
             }
             
             @font-face {
-                font-family: "Myriad-SemiBold";
-                src: url("fonts/MyriadPro-Semibold.otf");
+                font-family: "Montserrat-Regular";
+                src: url("fonts/Montserrat-Regular.otf");
             }
             
             @font-face {
-                font-family: "Myriad-SemiLight";
-                src: url("fonts/MyriadPro-LightSemiExt.otf");
+                font-family: "Montserrat-Bold";
+                src: url("fonts/Montserrat-Bold.otf");
+            }
+            
+            @font-face {
+                font-family: "Montserrat-SemiBold";
+                src: url("fonts/Montserrat-SemiBold.otf");
+            }
+            
+            @font-face {
+                font-family: "Montserrat-Light";
+                src: url("fonts/Montserrat-Light.otf");
             }
             
             // Estilos Generales
@@ -52,8 +65,13 @@
             }
             
             body {
-                font-family: "Myriad-SemiLight";
+                font-family: "Montserrat-Regular";
                 color: $colorNegro;
+            }
+            
+            .nav-color {
+                background-color: $colorAzul !important;
+                color: white;
             }
             
             .img-fluid {
@@ -71,51 +89,51 @@
             }
             
             h1 {
-                font-family: "Futura-Bold";
+                font-family: "Berthold-Bold";
                 font-size: 30pt;
             }
             
             h2 {
-                font-family: "Futura-Bold";
+                font-family: "Berthold-Bold";
                 font-size: 20pt;
             }
             
             p {
-                font-family: "Myriad-SemiLight";
+                font-family: "Montserrat-Light";
                 font-size: 14pt;
             }
             
             //Tamaño de textos
             .text16 {
-                font-family: "Myriad-SemiLight";
+                font-family: "Montserrat-Light";
                 font-size: 16pt;
             }
             
             .text18 {
-                font-family: "Myriad-SemiLight";
+                font-family: "Montserrat-Light";
                 font-size: 18pt;
             }
             
             .text22 {
-                font-family: "Myriad-SemiLight";
+                font-family: "Montserrat-Light";
                 font-size: 22pt;
             }
             
             //Estilo Bold
             .medium {
-                font-family: "Futura-Medium";
+                font-family: "Montserrat-Medium";
                 font-size: 16pt;
             }
             
             .semiBold {
-                font-family: "Myriad-SemiBold";
+                font-family: "Montserrat-SemiBold";
                 font-size: 16pt;
             }
             
             //Botones
             button {
-                background-color: $colorboton;
-                font-family: "Futura-Bold";
+                background-color: $colorRojo;
+                font-family: "Montserrat-Regular";
                 font-size: 12pt;
                 color: white;
                 padding: 10px 4% 10px 4%;
@@ -127,8 +145,8 @@
             }
             
             .button {
-                background-color: $colorboton;
-                font-family: "Futura-Bold";
+                background-color: $colorRojo;
+                font-family: "Montserrat-Regular";
                 font-size: 12pt;
                 color: white;
                 padding: 10px 4% 10px 4%;
@@ -142,12 +160,13 @@
             button:hover,
             .button:hover {
                 background-color: $colorBotonHover;
+                color: $colorNegro;
             }
             
             //inputs
             .input-group {
                 width: 100%;
-                height: 70px;
+                height: 60px;
                 display: flex;
                 flex-wrap: wrap;
                 margin: 10px;
@@ -179,9 +198,8 @@
             
             .estilo-validador {
                 color: $flecha;
-                padding-top: 5px;
+                padding-top: 1px;
                 padding-left: 20px;
-                font-family: "Myriad-SemiBold";
             }
             
             input {
@@ -285,14 +303,14 @@
                 .mi-nav {
                     display: flex;
                     .nav-link {
-                        padding-left: 20px;
-                        padding-right: 20px;
+                        padding-left: 15px;
+                        padding-right: 15px;
                     }
                 }
             }
             
             .cont-ingresar {
-                border-left: 1px solid $colorNegro;
+                border-left: 1px solid white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -301,18 +319,18 @@
                 padding-left: 20px;
                 a {
                     margin-right: 10px;
-                    font-family: "Myriad-SemiBold";
+                    font-family: "Montserrat-SemiBold";
                 }
                 a:hover {
-                    border-bottom: 5px solid $colorVerde;
-                    font-family: "Myriad-SemiBold";
+                    border-bottom: 5px solid $colorAzul-2;
+                    font-family: "Montserrat-SemiBold";
                     color: $colorNegro;
                 }
             }
             
             .nav-item:hover {
-                border-bottom: 5px solid $colorNaranja;
-                font-family: "Myriad-SemiBold";
+                border-bottom: 5px solid $colorAzulClaro;
+                font-family: "Montserrat-SemiBold";
             }
             
             .icono-menu:hover {
@@ -334,18 +352,18 @@
                     padding-right: 0px;
                     margin-left: 0px;
                     padding-left: 20px;
-                    background-color: $colorGrisFuerte;
+                    background-color: $colorAzulClaro;
                     flex-direction: row-reverse;
-                    font-family: "Myriad-SemiBold";
+                    font-family: "Montserrat-SemiBold";
                     font-size: 14pt;
                     a:hover {
                         border-bottom: none;
-                        font-family: "Myriad-SemiBold";
+                        font-family: "Montserrat-SemiBold";
                         color: $colorNegro;
                     }
                 }
                 .cont-ingresar:hover {
-                    border-bottom: 5px solid $colorVerde;
+                    border-bottom: 5px solid $colorRojo;
                 }
             }
             
@@ -358,161 +376,41 @@
             }
             
             .textoPrincipal {
-                width: 100%;
+                width: 100% !important;
                 position: absolute;
-                display: flex;
-                justify-content: center;
-                top: 360px;
-                padding-left: 340px;
+                margin-top: 22%;
                 button {
-                    width: 20%;
-                }
-            }
-            
-            @media only screen and (max-width: 2100px) {
-                .textoPrincipal {
-                    top: 450px;
-                    padding-left: 420px;
-                }
-            }
-            
-            @media only screen and (max-width: 1600px) {
-                .textoPrincipal {
-                    top: 400px;
-                    padding-left: 380px;
-                }
-            }
-            
-            @media only screen and (max-width: 1400px) {
-                .textoPrincipal {
-                    top: 360px;
-                    padding-left: 320px;
-                }
-            }
-            
-            @media only screen and (max-width: 1280px) {
-                .textoPrincipal {
-                    top: 340px;
-                    padding-left: 300px;
-                }
-            }
-            
-            @media only screen and (max-width: 1205px) {
-                .textoPrincipal {
-                    top: 320px;
-                    padding-left: 280px;
-                    button {
-                        width: 30%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 1120px) {
-                .textoPrincipal {
-                    top: 300px;
-                    padding-left: 260px;
-                    button {
-                        width: 30%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 1010px) {
-                .textoPrincipal {
-                    top: 280px;
-                    padding-left: 230px;
-                    button {
-                        width: 30%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 910px) {
-                .textoPrincipal {
-                    top: 260px;
-                    padding-left: 200px;
-                    button {
-                        width: 30%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 810px) {
-                .textoPrincipal {
-                    top: 240px;
-                    padding-left: 180px;
-                    button {
-                        width: 30%;
-                    }
+                    height: 45px;
+                    text-align: center;
+                    font-size: 14pt;
+                    margin-left: 6%;
                 }
             }
             
             @media only screen and (max-width: 769px) {
                 .textoPrincipal {
-                    top: 340px;
-                    padding-left: 220px;
+                    width: 100% !important;
+                    position: absolute;
+                    margin-top: 28%;
                     button {
-                        width: 60%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 695px) {
-                .textoPrincipal {
-                    top: 310px;
-                    padding-left: 200px;
-                    button {
-                        width: 60%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 600px) {
-                .textoPrincipal {
-                    top: 290px;
-                    padding-left: 170px;
-                    button {
-                        width: 60%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 530px) {
-                .textoPrincipal {
-                    top: 270px;
-                    padding-left: 150px;
-                    button {
-                        width: 60%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 482px) {
-                .textoPrincipal {
-                    top: 230px;
-                    padding-left: 130px;
-                    button {
-                        width: 60%;
+                        height: 45px;
+                        text-align: center;
+                        font-size: 14pt;
+                        margin-left: 6%;
                     }
                 }
             }
             
             @media only screen and (max-width: 426px) {
                 .textoPrincipal {
-                    top: 250px;
-                    padding-left: 10px;
+                    width: 100% !important;
+                    position: absolute;
+                    margin-top: 80%;
                     button {
-                        width: 80%;
-                    }
-                }
-            }
-            
-            @media only screen and (max-width: 360px) {
-                .textoPrincipal {
-                    top: 210px;
-                    padding-left: 10px;
-                    button {
-                        width: 80%;
+                        height: 45px;
+                        text-align: center;
+                        font-size: 14pt;
+                        margin-left: 34%;
                     }
                 }
             }
@@ -521,7 +419,7 @@
             //
             //Mecánica
             #mecanica {
-                background-color: $colorNaranja;
+                background-color: $colorAzul-3;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -544,15 +442,15 @@
                             margin-bottom: 10px;
                         }
                         p {
-                            font-family: "Myriad-SemiBold";
+                            font-family: "Montserrat-Light";
                             text-align: center;
-                            font-size: 1.5vw;
+                            font-size: 14px;
                             line-height: 1.4;
                             margin: 2% 0% 0% 0%;
                             padding: 0% 15% 0% 15%;
                             span {
                                 font-size: 18pt;
-                                font-family: "Myriad-SemiBold";
+                                font-family: "Montserrat-SemiBold";
                             }
                         }
                     }
@@ -599,18 +497,18 @@
                             }
                         }
                         p {
-                            font-family: "Myriad-SemiBold";
+                            font-family: "Montserrat-SemiBold";
                             text-align: center;
                             font-size: 18pt;
                             line-height: 1.4;
                             margin: 2% 0% 0% 0%;
                             span {
                                 font-size: 18pt;
-                                font-family: "Myriad-SemiBold";
+                                font-family: "Montserrat-SemiBold";
                             }
                         }
                         .texto-mecanica {
-                            font-family: "Myriad-Regular";
+                            font-family: "Montserrat-Regular";
                             font-size: 16pt;
                         }
                     }
@@ -635,17 +533,6 @@
                 }
             }
             
-            @media only screen and (max-width: 820px) {
-                .cont-mecanica {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    padding-left: 20%;
-                    padding-right: 20%;
-                }
-            }
-            
             @media only screen and (max-width: 425px) {
                 .cont-mecanica {
                     width: 100%;
@@ -661,7 +548,7 @@
             //
             // Registro
             #registro {
-                background-color: $colorVerde;
+                background-color: $colorAzul-2;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -681,12 +568,12 @@
                     }
                 }
                 .row {
-                    width: 80%;
+                    width: 100%;
                 }
             }
             
             #RegistroForm {
-                display: none;
+                display: flex;
             }
             
             .cont-form {
@@ -727,11 +614,11 @@
             .cont-boton {
                 display: flex;
                 justify-content: center;
-                margin-top: 25px;
+                margin-top: 40px;
                 .button {
                     width: 250px;
                     background-color: $colorboton;
-                    font-family: "Futura-Bold";
+                    font-family: "Montserrat-Regular";
                     font-size: 12pt;
                     color: white;
                     padding: 10px 4% 10px 4%;
@@ -749,11 +636,18 @@
             
             //login
             #login {
-                background-color: $colorVerde;
+                width: 100%;
+                background-color: $colorAzul-2;
+                display: none;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+            #LogInForm {
                 display: none;
                 flex-wrap: wrap;
                 justify-content: center;
-                padding-top: 80px;
+                padding-top: 20px;
                 padding-bottom: 80px;
                 .titulo-seccion {
                     display: flex;
@@ -773,8 +667,15 @@
                 }
             }
             
-            #LogInForm {
-                display: none;
+            .text-center-title {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-top: 80px;
+            }
+            
+            .no-margin {
+                margin: 0% !important;
             }
             
             @media only screen and (max-width: 630px) {
@@ -852,8 +753,8 @@
                             max-width: 500px;
                             h3 {
                                 width: 100%;
-                                font-family: "Futura-Bold";
-                                color: $textoAzul;
+                                font-family: "Berthold-Bold";
+                                color: $colorAzul;
                                 font-size: 42pt;
                             }
                             p {
@@ -872,7 +773,7 @@
             .micolor li {
                 width: 20px;
                 height: 20px;
-                background-color: #B67F53!important;
+                background-color: $colorAzul !important;
                 border-radius: 200px 200px 200px 200px;
                 -moz-border-radius: 200px 200px 200px 200px;
                 -webkit-border-radius: 200px 200px 200px 200px;
@@ -913,7 +814,7 @@
                     text-align: center;
                     h3 {
                         width: 100%;
-                        font-family: "Futura-Bold";
+                        font-family: "Berthold-Bold";
                         color: $textoAzul;
                         font-size: 30pt !important;
                     }
@@ -944,6 +845,7 @@
             .ganadores-proximamente {
                 display: flex;
                 /*-----------*/
+                color: white;
                 flex-wrap: wrap;
                 justify-content: center;
                 padding-top: 50px;
@@ -966,6 +868,7 @@
                         font-size: 36pt;
                         margin-top: 10%;
                         margin-bottom: 5%;
+                        color: white;
                     }
                     span {
                         font-size: 36pt;
@@ -974,8 +877,8 @@
             }
             
             .background-cottonelle {
-                height: 500px;
-                background-color: $colorMorado;
+                height: 580px;
+                background-color: $colorAzul;
                 margin-bottom: 10%;
             }
             
@@ -1067,7 +970,7 @@
                     th {
                         text-align: center;
                         color: $textoAzul;
-                        font-family: "Futura-Bold";
+                        font-family: "Berthold-Bold";
                         font-size: 24pt;
                         padding-top: 20px;
                         padding-bottom: 20px;
@@ -1082,7 +985,7 @@
             
             .texto-premios {
                 color: $textoAzul;
-                font-family: "Futura-Medium";
+                font-family: "Berthold-Bold";
             }
             /* width */
             
@@ -1344,7 +1247,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: $colorVerde;
+                    background-color: $colorAzul-3;
                     border-radius: 20px 0px 0px 20px;
                     -moz-border-radius: 20px 0px 0px 20px;
                     -webkit-border-radius: 20px 0px 0px 20px;
@@ -1536,13 +1439,13 @@
             
             .hover-rollos {
                 text-decoration: underline;
-                font-family: "Futura-Medium";
+                font-family: "Berthold-Regular";
             }
             
             .hover-rollos:hover {
                 text-decoration: underline;
-                color: $colorNaranja;
-                font-family: "Futura-Medium";
+                color: $colorAzul-3;
+                font-family: "Berthold-Regular";
             }
             
             #img-guia {
@@ -1617,7 +1520,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: $colorMorado;
+                background-color: $colorRojo;
                 border-radius: 20px 0px 0px 20px;
                 -moz-border-radius: 20px 0px 0px 20px;
                 -webkit-border-radius: 20px 0px 0px 20px;
@@ -1634,7 +1537,7 @@
                     padding-left: 10%;
                     padding-right: 10%;
                     #participaciones {
-                        font-family: "Futura-Bold";
+                        font-family: "Berthold-Bold";
                         color: $textoAzul;
                     }
                 }
@@ -1691,7 +1594,7 @@
                         th {
                             padding: 10px 0px 10px 0px;
                             color: $textoAzul;
-                            font-family: "Futura-Medium";
+                            font-family: "Berthold-Regular";
                         }
                     }
                 }
@@ -1900,4 +1803,101 @@
                         border: 0px solid #000000;
                     }
                 }
+            }
+            
+            #cont-registro {
+                display: flex;
+                flex-direction: column !important;
+                justify-content: center !important;
+            }
+            
+            #cont-formulario {
+                display: flex;
+                justify-content: center;
+            }
+            
+            #cont-LogIn {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .white {
+                color: white !important;
+            }
+            
+            .hover-white:hover {
+                color: white !important;
+            }
+            /* Nuevos estilos Mecanica */
+            
+            .cont-mecanica {
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    .box-mecanica {
+                        text-align: center;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        .cont-img {
+                            width: 100%;
+                            text-align: center;
+                            img {
+                                width: 70%;
+                            }
+                        }
+                        h5 {
+                            font-size: 26pt;
+                            font-family: Berthold-Bold;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            font-size: 16pt;
+                            font-family: Montserrat-Light;
+                        }
+                    }
+                }
+            }
+            
+            .pointer {
+                cursor: pointer;
+            }
+            
+            .navbar-toggler {
+                background-color: white;
+            }
+            
+            .alerta {
+                width: 100%;
+                background-color: $colorAmarillo;
+                color: black;
+                text-align: center;
+                margin-bottom: 5px;
+                border-radius: 10px 10px 10px 10px;
+                -moz-border-radius: 10px 10px 10px 10px;
+                -webkit-border-radius: 10px 10px 10px 10px;
+                border: 0px solid #000000;
+            }
+            
+            .margin-bottom {
+                margin: 0%;
+                margin-bottom: 10px;
+            }
+            
+            .flex-center {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .captcha-styles {
+                margin-top: 15px;
+            }
+            
+            .contraseña {
+                width: 100%;
+                text-align: center;
+                margin-top: 5px;
+                font-family: Montserrat-Regular;
+                text-decoration: underline;
             }
