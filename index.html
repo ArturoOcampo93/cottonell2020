@@ -32,7 +32,7 @@
     <!--NAV-->
     <nav class="nav-color navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-            <img class="logo img-fluid" src="images/logo.png" alt="Cottonelle">
+            <img class="logo img-fluid" src="images/logo.png" alt="REXAL">
         </a>
         <button class="icono-menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
     <!--BANNER PRINCIPAL-->
     <section class="principal container-fluid">
         <section class="textoPrincipal">
-            <button onclick="location.href='index.html#registro'">Regístrate</button>
+            <button onclick="location.href='index.html#registro'">Participa</button>
         </section>
         <picture>
             <source media="(min-width: 769px)" srcset="images/Desktop.png">
@@ -87,22 +87,31 @@
                     <div class="cont-img">
                         <img src="images/mecanica-1.png">
                     </div>
-                    <h5>Registra</h5>
-                    <p>Registrate en este sitio web.</p>
+                    <div>
+                        <img class="img-fluid" src="images/Texto-1.png">
+                    </div>
+                    <!--<h5>Registra</h5>-->
+                    <p>Regístrate en este sitio web y obtén gratis un recetario en PDF</p>
                 </div>
                 <div class="box-mecanica col-12 col-md-4">
                     <div class="cont-img">
                         <img src="images/mecanica-2.png">
                     </div>
-                    <h5>Calcula</h5>
-                    <p>Calcula el numero de objetos en la imagen.</p>
+                    <div>
+                        <img class="img-fluid" src="images/Texto-2.png">
+                    </div>
+                    <!--<h5>Calcula</h5>-->
+                    <p>Calcula cuántos alimentos hay dentro de nuestra urna 360º </p>
                 </div>
                 <div class="box-mecanica col-12 col-md-4">
                     <div class="cont-img">
                         <img src="images/mecanica-3.png">
                     </div>
-                    <h5>Participa</h5>
-                    <p>Si eres de los primeros en acertar podrás ganar increibles premios.</p>
+                    <div>
+                        <img class="img-fluid" src="images/Texto-3.png">
+                    </div>
+                    <!--<h5>Participa</h5>-->
+                    <p>Podrás ganar un Kit de electrodomésticos o una batería de cocina</p>
                 </div>
             </div>
             <!--<div class="caja-mecanica">
@@ -256,7 +265,7 @@
                         </div>
                         <div class="cont-boton">
                             <!--Botón de envio del formulario y redirecciona a la ThankYou Page-->
-                            <button type="button" class="button">Enviar Registro</button>
+                            <button type="button" class="button" onclick="location.href='gracias-registro.html'">Enviar Registro</button>
                             <!--onclick="location.href='gracias-registro.html'"-->
                         </div>
 
@@ -315,7 +324,7 @@
                 </div>
                 <div class="cont-boton">
                     <!--Boton de Ingresar - lleva a registrar el ticket-->
-                    <button type="button" class="button">Ingresar</button>
+                    <button type="button" class="button" onclick="location.href='juego.html'">Ingresar</button>
                     <!--onclick="location.href='RegistroTicket.html'"-->
                 </div>
 
@@ -334,7 +343,7 @@
         <div class="titulo-seccion row">
             <img class="img-titulos" src="images/Premios.png" alt="Premios">
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel-padding carousel slide" data-ride="carousel">
             <ol class="micolor carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -349,7 +358,7 @@
                         <div class="col-12 col-md-6 align-texto">
                             <div class="cont-tex">
                                 <h3>1º Lugar</h3>
-                                <p><span class="semiBold">Texto</span><br>Descripción del premio</p>
+                                <p><span class="semiBold">Kit de electrodomésticos</span><br>(valor 90 mil MXN)</p>
                             </div>
                         </div>
                     </div>
@@ -362,7 +371,7 @@
                         <div class="col-12 col-md-6 align-texto">
                             <div class="cont-tex">
                                 <h3>2º Lugar</h3>
-                                <p><span class="semiBold">Texto</span><br>Descripción del premio</p>
+                                <p><span class="semiBold">Kit de electrodomésticos</span><br>(valor 10 mil MXN)</p>
                             </div>
                         </div>
                     </div>
@@ -375,7 +384,7 @@
                         <div class="col-12 col-md-6 align-texto">
                             <div class="cont-tex">
                                 <h3>3º Lugar</h3>
-                                <p><span class="semiBold">Texto</span><br>Descripción del premio</p>
+                                <p><span class="semiBold">Batería de cocina</span><br>(valor 5 mil MXN)</p>
                             </div>
                         </div>
                     </div>
@@ -488,7 +497,7 @@
     <!--FOOTER-->
     <footer>
         <div class="cont-img">
-            <img src="images/LogoFooter.png" alt="Cottonell">
+            <img src="images/LogoFooter.png" alt="REXAL">
         </div>
         <div class="cont-footer">
             <ul>
@@ -537,7 +546,7 @@
                     <h5 class="modal-title semiBold" id="privacidad">Aviso de privacidad</h5>
                 </div>
                 <div class="modal-body overflowModal">
-                    ...
+                    <iframe src="documentos/AvisoPrivacidad.html" frameborder="0" width="100%" height="500px"></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
@@ -553,7 +562,7 @@
                     <h5 class="modal-title semiBold" id="bases">Bases de la promoción</h5>
                 </div>
                 <div class="modal-body overflowModal">
-                    ...
+                    <iframe src="documentos/Bases.html" frameborder="0" width="100%" height="500px"></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
@@ -585,7 +594,9 @@
                     <h5 class="modal-title semiBold" id="contacto">Contáctanos</h5>
                 </div>
                 <div class="modal-body overflowModal">
-                    ...
+                    <p>Vigencia del <span class="bold">11 de noviembre de 2020 al 9 de enero de 2021.</span></p>
+                    <p>Cobertura nacional. Teléfono de atención <br><span class="bold">800 801 07 99</span>, de lunes a viernes en un horario de <span class="bold">9:00 a 18:00 h (CDT).</span></p>
+                    <p>Consulta bases, restricciones y aviso de privacidad en este sitio</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>

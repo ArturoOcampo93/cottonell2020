@@ -17,14 +17,14 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Papel Higi&#233;nico Kleenex&#174; Cottonelle&#174;</title>
+    <title>REXAL | Calcula & Participa</title>
 </head>
 
 <body>
     <!--NAV-->
-    <nav class="nav-color navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="nav-color navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
-            <img class="logo img-fluid" src="images/logo.png" alt="Cottonelle">
+            <img class="logo img-fluid" src="images/logo.png" alt="REXAL">
         </a>
         <button class="icono-menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,23 +33,23 @@
             <div class="mi-nav reverse">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="white nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ancla" href="index.html#mecanica">Mecánica</a>
+                        <a class="white nav-link ancla" href="index.html#mecanica">Mecánica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#registro">Registro</a>
+                        <a class="white nav-link" href="index.html#registro" onclick="registrar()">Registro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#premios">Premios</a>
+                        <a class="white nav-link" href="index.html#premios">Premios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#ganadores-proximamente">Ganadores</a>
+                        <a class="white nav-link" href="index.html#ganadores-proximamente">Ganadores</a>
                     </li>
                 </ul>
                 <div class="cont-ingresar">
-                    <a class="nav-link" href="micuenta.html">Mi Cuenta</a>
+                    <a class="hover-white nav-link" href="micuenta.html">Mi cuenta</a>
                     <img src="images/user.png" alt="Usuario Icono">
                 </div>
             </div>
@@ -65,7 +65,8 @@
                 </div>
                 <div class="cont-text-box-juego">
                     <h1>Encuentra & Gana</h1>
-                    <p>Debes encontrar el número exacto de <a href="" class="hover-rollos" onmousemove="imgGuia()" onmouseout="clearCoor()">rollos</a> que hay en la imagen y registrar el numero en el campo de abajo.</p>
+                    <p>Calcula cuántos alimentos hay dentro de nuestra urna 360
+                        <!--<a href="" class="hover-rollos" onmousemove="imgGuia()" onmouseout="clearCoor()">img-muestra</a>-->y registra el numero en el campo de abajo.</p>
 
 
                     <!--INICIA EL FORMULARIO-->
@@ -75,13 +76,10 @@
                         <!--FORM | EMPIEZA EL FORMULARIO -->
                         <form class="form-box" action="">
 
-                            <!--
-                                En este caso se conserva la clase "input-group-ticket" para el DIV contenedor del input
-                                Se deja el ejemplo de estilo para el texto de validación
-                            -->
                             <div class="input-group-ticket">
-                                <input type="text" placeholder="¿Cuantos rollos hay?">
-                                <span class="estilo-validador">campo incorrecto</span>
+                                <input type="number" placeholder="Ingresa un número" style="text-align: center;">
+                                <!--Alerta de error-->
+                                <span class="estilo-validador">Ingresa un número válido</span>
                             </div>
                             <!-- Boton de envio de formulario | conduce a thankyou page Juego -->
                             <button type="button" class="button margin-button" data-toggle="modal" data-target="#staticBackdrop">Registrar mi conteo</button>
@@ -104,7 +102,7 @@
     <!--FOOTER-->
     <footer class="footer-registroTicket">
         <div class="cont-img">
-            <img src="images/logo.png" alt="Cottonell">
+            <img src="images/LogoFooter.png" alt="REXAL">
         </div>
         <div class="cont-footer">
             <ul>
@@ -152,7 +150,7 @@
                     <h5 class="modal-title semiBold" id="privacidad">Aviso de privacidad</h5>
                 </div>
                 <div class="modal-body overflowModal">
-                    ...
+                    <iframe src="documentos/AvisoPrivacidad.html" frameborder="0" width="100%" height="500px"></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
@@ -168,7 +166,7 @@
                     <h5 class="modal-title semiBold" id="bases">Bases de la promoción</h5>
                 </div>
                 <div class="modal-body overflowModal">
-                    ...
+                    <iframe src="documentos/Bases.html" frameborder="0" width="100%" height="500px"></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
@@ -200,7 +198,9 @@
                     <h5 class="modal-title semiBold" id="contacto">Contáctanos</h5>
                 </div>
                 <div class="modal-body overflowModal">
-                    ...
+                    <p>Vigencia del <span class="bold">11 de noviembre de 2020 al 9 de enero de 2021.</span></p>
+                    <p>Cobertura nacional. Teléfono de atención <br><span class="bold">800 801 07 99</span>, de lunes a viernes en un horario de <span class="bold">9:00 a 18:00 h (CDT).</span></p>
+                    <p>Consulta bases, restricciones y aviso de privacidad en este sitio</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>

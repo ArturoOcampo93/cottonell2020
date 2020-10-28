@@ -275,35 +275,37 @@ option:focus {
 .textoPrincipal {
   width: 100% !important;
   position: absolute;
-  margin-top: 22%; }
+  margin-top: 30%; }
   .textoPrincipal button {
     height: 45px;
     text-align: center;
     font-size: 14pt;
-    margin-left: 6%; }
+    float: right;
+    margin-right: 28%; }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .textoPrincipal {
     width: 100% !important;
     position: absolute;
-    margin-top: 28%; }
+    margin-top: 37%; }
     .textoPrincipal button {
       height: 45px;
       text-align: center;
       font-size: 14pt;
-      margin-left: 6%; } }
-@media only screen and (max-width: 426px) {
+      margin-left: 8%; } }
+@media only screen and (max-width: 425px) {
   .textoPrincipal {
     width: 100% !important;
     position: absolute;
-    margin-top: 80%; }
+    margin-top: 75%; }
     .textoPrincipal button {
+      width: 180px;
       height: 45px;
       text-align: center;
       font-size: 14pt;
-      margin-left: 34%; } }
+      margin-right: 25%; } }
 #mecanica {
-  background-color: #46abe5;
+  background-color: #0f119f;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -328,12 +330,34 @@ option:focus {
         text-align: center;
         font-size: 14px;
         line-height: 1.4;
-        margin: 2% 0% 0% 0%;
+        margin: 4% 0% 0% 0%;
         padding: 0% 15% 0% 15%; }
         #mecanica .row div p span {
           font-size: 18pt;
           font-family: "Montserrat-SemiBold"; }
 
+@media only screen and (max-width: 768px) {
+  #mecanica .row div p {
+    font-family: "Montserrat-Light";
+    text-align: center;
+    font-size: 10pt;
+    line-height: 1.4;
+    margin: 4% 0% 0% 0%;
+    padding: 0% 15% 0% 15%; }
+    #mecanica .row div p span {
+      font-size: 18pt;
+      font-family: "Montserrat-SemiBold"; } }
+@media only screen and (max-width: 425px) {
+  #mecanica .row div p {
+    font-family: "Montserrat-Light";
+    text-align: center;
+    font-size: 10pt;
+    line-height: 1.4;
+    margin: 4% 0% 0% 0%;
+    padding: 0% 15% 0% 15%; }
+    #mecanica .row div p span {
+      font-size: 18pt;
+      font-family: "Montserrat-SemiBold"; } }
 .marco-texto {
   background-color: #462F77;
   color: white;
@@ -561,7 +585,7 @@ option:focus {
           font-size: 42pt; }
         #premios .cont-carousel div .cont-tex p {
           width: 100%;
-          font-size: 30pt;
+          font-size: 22pt;
           line-height: 1.2 !important; }
           #premios .cont-carousel div .cont-tex p span {
             font-size: 30pt; }
@@ -713,7 +737,7 @@ option:focus {
     .cont-tabla-ganadores table th {
       text-align: center;
       color: #462F77;
-      font-family: "Berthold-Bold";
+      font-family: "Montserrat-Bold";
       font-size: 24pt;
       padding-top: 20px;
       padding-bottom: 20px; }
@@ -882,11 +906,11 @@ footer {
 @media only screen and (max-width: 470px) {
   footer .row {
     width: 50%; } }
-        /*
-*
-*
-*
-*/
+/*
+    *
+    *
+    *
+    */
 .cont-box {
   width: 100%;
   display: flex;
@@ -962,7 +986,7 @@ footer {
 @media only screen and (max-width: 470px) {
   .cont-text-box .cont-form-box .form-box {
     width: 90% !important; } }
-            /*
+/*
 *
 *
 */
@@ -1049,7 +1073,7 @@ footer {
           text-align: center; } }
 .hover-rollos {
   text-decoration: underline;
-  font-family: "Berthold-Regular"; }
+  font-family: "Montserrat-Bold"; }
 
 .hover-rollos:hover {
   text-decoration: underline;
@@ -1093,7 +1117,7 @@ footer {
 .footer-registroTicket {
   margin-top: 50px; }
 
-            /*
+/*
 *
 *
 *
@@ -1118,7 +1142,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F04537;
+  background-color: #0f119f;
   border-radius: 20px 0px 0px 20px;
   -moz-border-radius: 20px 0px 0px 20px;
   -webkit-border-radius: 20px 0px 0px 20px;
@@ -1189,7 +1213,7 @@ footer {
       .cont-tabla table tr th {
         padding: 10px 0px 10px 0px;
         color: #462F77;
-        font-family: "Berthold-Regular"; }
+        font-family: "Montserrat-Bold"; }
 
 .cont-botones {
   width: 100%;
@@ -1246,13 +1270,13 @@ footer {
 .width-100 {
   width: 100% !important; }
 
-            /*
+/*
 *
 *
 *
 */
 .overflowModal {
-  height: 500px !important;
+  height: auto !important;
   overflow: auto; }
 
 .margin-button-modal {
@@ -1290,7 +1314,7 @@ footer {
     width: 100%;
     font-size: 40pt; }
   .cont-text-box-thanks p {
-    font-size: 22pt;
+    font-size: 16pt;
     width: 100%;
     padding-right: 5%;
     padding-left: 5%; }
@@ -1309,6 +1333,51 @@ footer {
     -webkit-border-radius: 30px 30px 30px 30px;
     border: 0px solid #000000; }
 
+.btn-up {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.sec-btn {
+  background-color: #46abe5; }
+
+@media only screen and (max-width: 1025px) {
+  .cont-text-box-thanks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+    text-align: center; }
+    .cont-text-box-thanks h1 {
+      width: 100%;
+      font-size: 28pt;
+      padding-right: 3%;
+      padding-left: 3%;
+      margin-top: 35px; }
+    .cont-text-box-thanks p {
+      font-size: 14pt;
+      width: 100%;
+      padding-right: 5%;
+      padding-left: 5%; }
+    .cont-text-box-thanks div {
+      margin-bottom: 30px;
+      padding-right: 5%;
+      padding-left: 5%; }
+
+  .cont-img-box-thanks {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; }
+    .cont-img-box-thanks img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #000;
+      border-radius: 30px 30px 30px 30px;
+      -moz-border-radius: 30px 30px 30px 30px;
+      -webkit-border-radius: 30px 30px 30px 30px;
+      border: 0px solid #000000; } }
 @media only screen and (max-width: 925px) {
   .cont-text-box-thanks {
     width: 100%;
@@ -1324,7 +1393,45 @@ footer {
       padding-left: 3%;
       margin-top: 35px; }
     .cont-text-box-thanks p {
-      font-size: 18pt;
+      font-size: 16pt;
+      width: 100%;
+      padding-right: 5%;
+      padding-left: 5%; }
+    .cont-text-box-thanks div {
+      margin-bottom: 30px;
+      padding-right: 5%;
+      padding-left: 5%; }
+
+  .cont-img-box-thanks {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; }
+    .cont-img-box-thanks img {
+      width: 50%;
+      height: auto;
+      border: 1px solid #000;
+      border-radius: 30px 30px 30px 30px;
+      -moz-border-radius: 30px 30px 30px 30px;
+      -webkit-border-radius: 30px 30px 30px 30px;
+      border: 0px solid #000000; } }
+@media only screen and (max-width: 426px) {
+  .cont-text-box-thanks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+    text-align: center; }
+    .cont-text-box-thanks h1 {
+      width: 100%;
+      font-size: 28pt;
+      padding-right: 3%;
+      padding-left: 3%;
+      margin-top: 35px; }
+    .cont-text-box-thanks p {
+      font-size: 12pt;
       width: 100%;
       padding-right: 5%;
       padding-left: 5%; }
@@ -1423,5 +1530,71 @@ footer {
   margin-top: 5px;
   font-family: Montserrat-Regular;
   text-decoration: underline; }
+
+@media only screen and (max-width: 425px) {
+  #cont-logIn {
+    width: 80%; }
+
+  #cont-formulario {
+    width: 80%;
+    margin-left: 10%; } }
+@media only screen and (max-width: 339px) {
+  #cont-center {
+    width: 90%;
+    margin-left: 0%; }
+
+  .captcha-styles iframe {
+    width: 200px !important; } }
+.carousel-padding {
+  padding-bottom: 50px; }
+
+@media only screen and (max-width: 768px) {
+  .cont-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0%; }
+    .cont-carousel div {
+      width: 100%; }
+      .cont-carousel div .img-fluid {
+        max-width: 500px; }
+      .cont-carousel div .cont-tex {
+        max-width: 500px; }
+        .cont-carousel div .cont-tex h3 {
+          width: 100%;
+          font-family: "Berthold-Bold";
+          color: #0f119f;
+          font-size: 42pt !important; }
+        .cont-carousel div .cont-tex p {
+          width: 100%;
+          font-size: 22pt !important;
+          line-height: 1.2 !important; }
+          .cont-carousel div .cont-tex p span {
+            font-size: 26pt !important; } }
+@media only screen and (max-width: 425px) {
+  .cont-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0%; }
+    .cont-carousel div {
+      width: 100%; }
+      .cont-carousel div .img-fluid {
+        max-width: 500px; }
+      .cont-carousel div .cont-tex {
+        max-width: 500px; }
+        .cont-carousel div .cont-tex h3 {
+          width: 100%;
+          font-family: "Berthold-Bold";
+          color: #0f119f;
+          font-size: 42pt !important; }
+        .cont-carousel div .cont-tex p {
+          width: 100%;
+          font-size: 16pt !important;
+          line-height: 1.2 !important; }
+          .cont-carousel div .cont-tex p span {
+            font-size: 20pt !important; } }
+.bold {
+  font-family: "Montserrat-Bold"; }
 
 /*# sourceMappingURL=styles.css.map */
